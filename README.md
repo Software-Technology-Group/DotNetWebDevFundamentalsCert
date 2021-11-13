@@ -34,9 +34,9 @@ This certification uses the DotNetCertification SQL Server Database.  You will n
 
 ### Option 2 - Use the docker container
 
-1.  Make you have Docker Desktop installed on your machine
-2.  Get the prebuilt image from `tfillerup/stgdotnetcertification:latest`
-3.  Run the container
+1.  Make sure you have Docker Desktop installed on your machine
+2.  Get the prebuilt image from `tfillerup/dotnetcertsqldb:latest`
+3.  Run the container `docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=@ReallyStr0ngP@ssw0rd" -p 1433:1433 --name dotnetcertsql -h dotnetcertsql -d tfillerup/dotnetcertsqldb`
 
 # Section 2 - Build out your solution
 ## Objectives
@@ -76,7 +76,7 @@ This certification uses the DotNetCertification SQL Server Database.  You will n
 - Implement OpenAPI
   
 ## 1. Create a new branch called Section_3_WebApi
-## 2. Add OpenApi to the app using .NET middleware
+## 2. Add OpenApi to the app using .NET middleware if is isn't already there
 ## 3. Add logging using Serilog using .NET middleware
 
 ## 4. Build Customer functionality
